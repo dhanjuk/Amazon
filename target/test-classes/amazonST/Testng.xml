@@ -1,0 +1,15 @@
+<suite name="TestNg Amazon">
+
+<test name="Regression" allow-return-values="true">
+  <classes>
+  <class name="amazonST.Testng"/>
+  <class name="amazonST.TestSign"/>
+  <class name="amazonST.Testaddress"/>
+  <class name="amazonST.Testsearch"/>
+  <class name="amazonST.Testcart"/>
+  <class name="amazonST.Testparameterize"/>
+  </classes>
+  </test>;
+
+
+</suite>

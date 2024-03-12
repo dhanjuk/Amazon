@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNg Amazon]">
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="amazonST.Testaddress">
+        <methods>
+          <include name="Invaliddata"/>
+          <include name="open"/>
+          <include name="security"/>
+        </methods>
+      </class> <!-- amazonST.Testaddress -->
+      <class name="amazonST.TestSign">
+        <methods>
+          <include name="open"/>
+          <include name="validdata"/>
+          <include name="invalid"/>
+        </methods>
+      </class> <!-- amazonST.TestSign -->
+      <class name="amazonST.Testsearch">
+        <methods>
+          <include name="validdata"/>
+          <include name="count"/>
+          <include name="open"/>
+        </methods>
+      </class> <!-- amazonST.Testsearch -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [TestNg Amazon] -->
