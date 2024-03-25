@@ -26,13 +26,13 @@ public class Signin {
 		a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
 		ob.findElement(By.cssSelector("#nav-al-your-account > a:nth-child(2) > span")).click();
 		ob.findElement(By.cssSelector("#a-page > div.a-container > div > div:nth-child(2) > div:nth-child(1) > a > div > div > div > div.a-column.a-span9.a-span-last > h2")).click();
-		/*boolean b=ob.findElement(By.cssSelector("#a-page > section > div.your-orders-content-container__content.js-yo-main-content > "
+		boolean b=ob.findElement(By.cssSelector("#a-page > section > div.your-orders-content-container__content.js-yo-main-content > "
 				+ "div.a-section.a-spacing-medium.page-tabs > ul > li:nth-child(2) > a")).isDisplayed();
 		System.out.println(b);
 		boolean n =ob.findElement(By.cssSelector("#a-page > section > div.your-orders-content-container__content.js-yo-main-content > div.a-section.a-spacing-medium.page-tabs > ul > li:nth-child(3) > a")).isDisplayed();
 		System.out.println(n);
 		boolean c= ob.findElement(By.cssSelector("#a-page > section > div.your-orders-content-container__content.js-yo-main-content > div.a-section.a-spacing-medium.page-tabs > ul > li:nth-child(6) > a")).isDisplayed();
-		System.out.println(c);*/
+		System.out.println(c);
 		Thread.sleep(2000);
 		
 		ob.findElement(By.cssSelector("#a-page > section > div.your-orders-content-container__content.js-yo-main-content > div.a-section.a-spacing-medium.page-tabs > ul > li:nth-child(2) > a")).click();

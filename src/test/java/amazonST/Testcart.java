@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 public class Testcart {
-			public class Testaddress {
+		
 			WebDriver ob;
 			ANomain p=new ANomain(ob);
 			@BeforeMethod
@@ -30,7 +30,7 @@ public class Testcart {
 			}
 			/*
 			 * @Test(priority=1, enabled=false) public void Delete() {
-			 * p.signinfo("singhsharanjeet748@gmail.com", "Jatinder"); p.Delete(); }
+			 * p.signinfo("singhsharanjeet748@gmail.com", "Jatinder"); 
+			 * p.Delete(); }
 			 */
-}
 }

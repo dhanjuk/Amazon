@@ -28,41 +28,30 @@ public class AddressModule {
 		System.out.println(e.getText());
 		System.out.println(e1.getText());
 		
-		/*
-		 * Actions a1=new Actions(ob);
-		 * a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).
-		 * build().perform();
-		 * ob.findElement(By.cssSelector("#nav-al-your-account > a:nth-child(2) > span")
-		 * ).click(); ob.findElement(By.
-		 * cssSelector("#a-page > div.a-container > div > div:nth-child(3) > div:nth-child(1) > a > div > div > div > div.a-column.a-span9.a-span-last > div > span"
-		 * )).click();
-		 * ob.findElement(By.cssSelector("#ya-myab-plus-address-icon")).click();
-		 * ob.findElement(By.cssSelector("#address-ui-widgets-countryCode > span > span"
-		 * )).click();
-		 * ob.findElement(By.id("address-ui-widgets-countryCode-dropdown-nativeId_39")).
-		 * click(); Thread.sleep(3000);
-		 * ob.findElement(By.cssSelector("#address-ui-widgets-enterAddressFullName")).
-		 * sendKeys("Jatinder");
-		 * ob.findElement(By.cssSelector("#address-ui-widgets-enterAddressPhoneNumber"))
-		 * .sendKeys("1234566789");
-		 * ob.findElement(By.id("address-ui-widgets-enterAddressLine1")).
-		 * sendKeys("7287 shallford rd");
-		 * ob.findElement(By.id("address-ui-widgets-enterAddressCity")).sendKeys(
-		 * "Mississauga"); ob.findElement(By.
-		 * cssSelector("#address-ui-widgets-enterAddressStateOrRegion > span > span")).
-		 * click(); ob.findElement(By.id(
-		 * "address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_8")).click();
-		 * ob.findElement(By.id("address-ui-widgets-enterAddressPostalCode")).
-		 * sendKeys("L4T 2P8");
-		 * ob.findElement(By.id("address-ui-widgets-use-as-my-default")).click();
-		 * Thread.sleep(3000);
-		 * ob.findElement(By.id("address-ui-widgets-addr-details-gate-code")).sendKeys(
-		 * "12345"); Thread.sleep(3000); ob.findElement(By.xpath(
-		 * "//*[@id=\"address-ui-widgets-addr-details-business-hours\"]/span/span")).
-		 * click(); ob.findElement(By.id("dropdown1_1")).click(); ob.findElement(By.
-		 * cssSelector("#address-ui-widgets-form-submit-button > span > input")).click()
-		 * ;
-		 */
+		
+		  Actions a1=new Actions(ob);
+		  a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
+		  ob.findElement(By.cssSelector("#nav-al-your-account > a:nth-child(2) > span")).click(); 
+		  ob.findElement(By.cssSelector("#a-page > div.a-container > div > div:nth-child(3) > div:nth-child(1) > a > div > div > div > div.a-column.a-span9.a-span-last > div > span")).click();
+		  ob.findElement(By.cssSelector("#ya-myab-plus-address-icon")).click();
+		  ob.findElement(By.cssSelector("#address-ui-widgets-countryCode > span > span")).click();
+		  ob.findElement(By.id("address-ui-widgets-countryCode-dropdown-nativeId_39")).click(); Thread.sleep(3000);
+		  ob.findElement(By.cssSelector("#address-ui-widgets-enterAddressFullName")).sendKeys("Jatinder");
+		  ob.findElement(By.cssSelector("#address-ui-widgets-enterAddressPhoneNumber")).sendKeys("1234566789");
+		  ob.findElement(By.id("address-ui-widgets-enterAddressLine1")).sendKeys("7287 shallford rd");
+		  ob.findElement(By.id("address-ui-widgets-enterAddressCity")).sendKeys("Mississauga"); 
+		  ob.findElement(By.cssSelector("#address-ui-widgets-enterAddressStateOrRegion > span > span")).click(); 
+		  ob.findElement(By.id("address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_8")).click();
+		  ob.findElement(By.id("address-ui-widgets-enterAddressPostalCode")).sendKeys("L4T 2P8");
+		  ob.findElement(By.id("address-ui-widgets-use-as-my-default")).click();
+		  Thread.sleep(3000);
+		  ob.findElement(By.id("address-ui-widgets-addr-details-gate-code")).sendKeys("12345"); 
+		  Thread.sleep(3000); 
+		  ob.findElement(By.xpath("//*[@id=\"address-ui-widgets-addr-details-business-hours\"]/span/span")).click(); 
+		  ob.findElement(By.id("dropdown1_1")).click(); 
+		  ob.findElement(By.cssSelector("#address-ui-widgets-form-submit-button > span > input")).click()
+		  ;
+		 
 	
 	}
 

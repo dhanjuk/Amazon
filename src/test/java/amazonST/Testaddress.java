@@ -29,8 +29,7 @@ public class Testaddress {
 		  public void validdata() throws InterruptedException { 
 		  p.signinfo("singhsharanjeet748@gmail.com","Jatinder");
 		  Actions a1=new Actions(ob);
-		  a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).
-		  build().perform();
+		  a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
 		  ob.findElement(By.cssSelector("#nav-al-your-account > a:nth-child(2) > span")).click();
 		  p.Addaddress("jatinder","3432972828","7287 shallford rd","","L4T2P8","123455"
 		  ); }
@@ -48,8 +47,8 @@ public class Testaddress {
 		  }
 		  
 		  @Test(priority=2)// Login module
-		  public void security() throws
-		  InterruptedException { p.signinfo("singhsharanjeet748@gmail.com","Jatinder"); 
+		  public void security() throws InterruptedException {
+		  p.signinfo("singhsharanjeet748@gmail.com","Jatinder"); 
 		  Actions a1=new Actions(ob);
 		  a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
 		  Thread.sleep(2000); 

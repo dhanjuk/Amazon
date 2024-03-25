@@ -42,7 +42,6 @@ public class ANomain {
 	@FindBy(css="#NAME_BUTTON > span > a") WebElement Nameb;
 	@FindBy(id="ap_customer_name") WebElement Cnamen;//clear then send      
 	@FindBy(id="cnep_1C_submit_button") WebElement Submit;
-	//navigate
 	@FindBy(css="#MOBILE_NUMBER_BUTTON > span > a") WebElement Mobilebtn;
 	@FindBy(css="#a-autoid-0-announce > span") WebElement Countrybtn;
 	@FindBy(css="#auth-country-picker_34") WebElement Canadabtn;
@@ -120,7 +119,7 @@ public class ANomain {
 	
 	
 	
-	public void Updateinfo(String cname, String phoneno) throws InterruptedException {
+	public void Updateinfo(String cname, String phoneno) throws InterruptedException {  //login and security
 		Aaccount.click();
 		Login.click();
 		Nameb.click();

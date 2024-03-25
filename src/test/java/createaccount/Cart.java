@@ -35,12 +35,12 @@ public class Cart {
 		
 		
 		
-		/*ob.findElement(By.name("proceedToRetailCheckout")).click();
+		ob.findElement(By.name("proceedToRetailCheckout")).click();
 		Thread.sleep(8000);
 		ob.findElement(By.name("ppw-claimCode")).sendKeys("CMJ123"); //Invalid coupon
 		ob.findElement(By.name("ppw-claimCodeApplyPressed")).click();
 		ob.findElement(By.name("submit.delete.a44a5236-eb9c-42bc-af9f-3d65c5476e3b")).click();//Delete item
-		ob.findElement(By.name("submit.delete.9df32eae-8611-4cb7-9fcb-ae519896f143")).click(); */
+		ob.findElement(By.name("submit.delete.9df32eae-8611-4cb7-9fcb-ae519896f143")).click(); 
 		
 		
 	}

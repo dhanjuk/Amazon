@@ -1,6 +1,8 @@
 package amazonST;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,8 +14,10 @@ public class Testng {
 		System.setProperty("Webdriver.chrome.driver","Chromedriver.exe");
 		ob=new ChromeDriver();
 		p=new ANomain(ob);
-		ob.get("https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
-		Thread.sleep(10000);		
+		ob.get("https://www.amazon.com");
+		Actions a=new Actions(ob);
+		a.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();		
+		ob.findElement(By.linkText("Start here.")).click();		
 	}	
 	@Test(priority=1)
 	public void validdata() {

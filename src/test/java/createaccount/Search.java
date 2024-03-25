@@ -37,21 +37,21 @@ public class Search {
 		/*WebElement e=ob.findElement(By.xpath("//*[@id=\"search\"]/span[2]/div/h1/div/div[1]/div/div/span[1]"));
 		System.out.println(e.getText());
 		
-		//no. of products
-		/*List<WebElement> products = ob.findElements(By.className("s-image"));
+		no. of products
+		List<WebElement> products = ob.findElements(By.className("s-image"));
         int productsCount = products.size();
         System.out.println("Total Number of products : " + productsCount);
 		
-		//Next button
-		//ob.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[68]/div/div/span/a[3]")).click();
+		Next button
+		ob.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[68]/div/div/span/a[3]")).click();*/
 		
-		/*ob.findElement(By.cssSelector("#a-autoid-0-announce > span.a-dropdown-prompt")).click();//sorting by newest arrival
+		ob.findElement(By.cssSelector("#a-autoid-0-announce > span.a-dropdown-prompt")).click(); //sorting by newest arrival
 		ob.findElement(By.id("s-result-sort-select_4")).click();
 		Thread.sleep(3000);
 		ob.findElement(By.cssSelector("#p_36\\/2661613011 > span > a > span")).click(); //Filtering by price
 		Thread.sleep(3000);
         ob.findElement(By.cssSelector("#p_n_date_first_available_absolute\\/15196852011 > span > a > span")).click();//last 30 days
-		*/
+		
 	}
 
 }

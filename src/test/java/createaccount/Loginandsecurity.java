@@ -23,10 +23,11 @@ public class Loginandsecurity {
 		a1.moveToElement(ob.findElement(By.id("nav-link-accountList-nav-line-1"))).build().perform();
 		ob.findElement(By.cssSelector("z#nav-al-your-account > a:nth-child(2) > span")).click();
 		ob.findElement(By.cssSelector("#a-page > div.a-container > div > div:nth-child(2) > div:nth-child(2) > a > div > div > div > div.a-column.a-span9.a-span-last > div > span")).click();
-		/*ob.findElement(By.cssSelector("#NAME_BUTTON > span > a")).click();
+		
+		ob.findElement(By.cssSelector("#NAME_BUTTON > span > a")).click();
 		ob.findElement(By.id("ap_customer_name")).clear();
 		ob.findElement(By.id("ap_customer_name")).sendKeys("Jatinder");
-		ob.findElement(By.id("cnep_1C_submit_button")).click(); // name update*/
+		ob.findElement(By.id("cnep_1C_submit_button")).click(); // name update
 		
 		ob.findElement(By.cssSelector("#MOBILE_NUMBER_BUTTON > span > a")).click();// add mobile number
 		ob.findElement(By.cssSelector("#a-autoid-0-announce > span")).click();		
